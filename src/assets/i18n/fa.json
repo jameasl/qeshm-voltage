@@ -4,6 +4,8 @@
         "Setting": "تنظیمات"
     },
     "SideBarComponent": {
-        "Dashboard": "داشبورد"
+        "Dashboard": "داشبورد",
+        "InstantaneousTemperature": "دمای لحظه ای",
+        "AverageTemperature": "میانگین دما"
     }
 }

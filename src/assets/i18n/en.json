@@ -4,7 +4,10 @@
         "Setting": "Setting"
     },
     "SideBarComponent": {
-        "Dashboard": "Dashboard"
+        "Dashboard": "Dashboard",
+        "InstantaneousTemperature": "Instantaneous Temperature",
+        "AverageTemperature": "Average Temperature"
+
     }
 
 }

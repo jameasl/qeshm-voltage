@@ -7,6 +7,8 @@ import { SettingComponent } from './layout/setting/setting.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
 import { Router, RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { InstantaneousTemperatureComponent } from './dashboard/instantaneous-temperature/instantaneous-temperature.component';
+import { AverageTemperatureComponent } from './dashboard/average-temperature/average-temperature.component';
 
 
 
@@ -17,6 +19,8 @@ import { SharedModule } from '../shared/shared.module';
     HeaderComponent,
     SettingComponent,
     SideBarComponent,
+    InstantaneousTemperatureComponent,
+    AverageTemperatureComponent,
     
 
   ],
@@ -26,11 +30,6 @@ import { SharedModule } from '../shared/shared.module';
     
   ],
   exports: [
-    HomeComponent,
-    SelectLanguageComponent,
-    HeaderComponent,
-    SettingComponent,
-    SideBarComponent,
   ]
 })
 export class PresentationModule { }
