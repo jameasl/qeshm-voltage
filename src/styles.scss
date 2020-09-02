@@ -1,0 +1,83 @@
+@import "./assets/css/material-icons.scss";
+
+@font-face {
+    font-family: yekan-persian;
+    src: url(./assets/font/yekan-persian.woff2)
+}
+@font-face {
+    font-family: yekan-english;
+    src: url(./assets/font/yekan-english.woff)
+}
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family:  yekan-persian, Arial, sans-serif!important;
+
+    // setting
+    #setting  {
+        left: -250px;
+    }
+    #setting.open  {
+        left: 0;
+    }
+
+}
+body.ltr {
+    direction: ltr;
+    text-align: left;
+    font-family:  yekan-english, Arial, sans-serif!important;
+
+    // setting
+    #setting  {
+        right: -250px;
+    }
+    #setting.open  {
+        right: 0;
+    }
+
+}
+
+// kendo panel bar 
+kendo-panelbar-item .k-image {
+    width: 1.5em;
+}
+.k-panelbar[dir="rtl"] .k-link > .k-image,
+.k-panelbar[dir="rtl"] .k-link > .k-sprite,
+ .k-rtl .k-panelbar .k-link > .k-image,
+  .k-rtl .k-panelbar .k-link > .k-sprite {
+    margin-left: 7px;
+   margin-right: 0;
+
+}
+.k-panelbar > .k-item > .k-link.k-state-selected {
+    color: #3bafda;
+    background-color: transparent;
+}
+.k-panelbar .k-group > .k-item > .k-link.k-state-selected {
+    color: #3bafda;
+    background-color: transparent;
+}
+.k-panelbar .k-group > .k-item > .k-link.k-state-selected:hover, .k-panelbar .k-group > .k-item > .k-link.k-state-selected.k-state-hover {
+    color: #3bafda;
+    background-color: transparent;
+
+}
+.k-panelbar > .k-item > .k-link.k-state-selected:hover, .k-panelbar > .k-item > .k-link.k-state-selected.k-state-hover {
+    color: #3bafda;
+    background-color: transparent;
+
+}
+.k-state-expanded {
+    .k-header {
+        color: #3bafda!important;
+    }
+}
+.k-panelbar {
+    background-color: white;
+}
+.k-panelbar .k-group > .k-item { 
+    &:focus {
+        outline: none;
+    }
+}

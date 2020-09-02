@@ -1,0 +1,16 @@
+{
+    "languages": [
+        {
+            "key": 1,
+            "title": "fa",
+            "isRtl": true,
+            "isDefault": true
+        },
+        {
+            "key": 2,
+            "title": "en",
+            "isRtl": false,
+            "isDefault": false
+        }
+    ]
+}

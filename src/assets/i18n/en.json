@@ -1,0 +1,10 @@
+{
+    "Title": "Qeshm Valtage",
+    "SettingComponent": {
+        "Setting": "Setting"
+    },
+    "SideBarComponent": {
+        "Dashboard": "Dashboard"
+    }
+
+}
