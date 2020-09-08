@@ -21,6 +21,14 @@ body.rtl {
     #setting.open  {
         left: 0;
     }
+    //sidebar
+    #sidebar {
+        right: -250px;
+    }
+    #sidebar.open {
+        right: 0;
+    }
+
 
 }
 body.ltr {
@@ -34,6 +42,13 @@ body.ltr {
     }
     #setting.open  {
         right: 0;
+    }
+    //sidebar
+    #sidebar {
+        left: -250px;
+    }
+    #sidebar.open {
+        left: 0;
     }
 
 }

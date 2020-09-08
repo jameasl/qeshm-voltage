@@ -1,1 +1,13 @@
-<p>instantaneous-temperature works!</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+            <div class="card-box">
+                <h2 class="title">{{'SideBarComponent.InstantaneousTemperature' | translate}}</h2>
+                <div class="gauge">
+                    <kendo-lineargauge id="linear"  #linear [pointer]="{ value: temprature }">
+                    </kendo-lineargauge>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

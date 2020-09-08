@@ -1,5 +1,8 @@
 <div id="logo">
     <img src="assets/image/logo.png" [width]="getLogoWidth()">
+    <span class="material-icons menu" (click)="onMenuClick()">
+        menu
+    </span>
 </div>
 <kendo-panelbar>
     <kendo-panelbar-item title="{{isMenuOpen ? ('SideBarComponent.Dashboard' | translate) : ''}}" [imageUrl]="iconUrl('dashboard')">

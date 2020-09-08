@@ -12,6 +12,12 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { GaugesModule } from '@progress/kendo-angular-gauges';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+
+
+
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,8 +35,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     CoreModule,
     PresentationModule,
     BrowserAnimationsModule,
-    LayoutModule,
-    DropDownsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

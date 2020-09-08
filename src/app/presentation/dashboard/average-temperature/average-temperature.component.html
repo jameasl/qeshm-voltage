@@ -1,1 +1,28 @@
-<p>average-temperature works!</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 ">
+            <div class="card-box">
+                <h2 class="title">{{'SideBarComponent.AverageTemperature' | translate}}</h2>
+                <kendo-chart id="line-chart">
+                    <kendo-chart-legend position="bottom" orientation="horizontal">
+                    </kendo-chart-legend>
+                    <!-- <kendo-chart-title [text]="chartData?.stackTitle"></kendo-chart-title> -->
+
+                    <kendo-chart-series>
+                        <ng-container *ngFor="let item of tempratures ">
+                            <kendo-chart-series-item type="line" field="tempratue" categoryField="time"
+                                [name]="item.title" [data]="item.details">
+                                <kendo-chart-series-item-tooltip>
+                                    <ng-template kendoChartSeriesTooltipTemplate let-value="value"
+                                        let-category="category" let-series="series">
+                                        {{ item.title + ' : ' + (value | number)  }}
+                                    </ng-template>
+                                </kendo-chart-series-item-tooltip>
+                            </kendo-chart-series-item>
+                        </ng-container>
+                    </kendo-chart-series>
+                </kendo-chart>
+            </div>
+        </div>
+    </div>
+</div>

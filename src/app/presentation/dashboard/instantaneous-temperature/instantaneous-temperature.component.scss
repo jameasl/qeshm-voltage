@@ -1,0 +1,17 @@
+#linear {
+    height: 300px;
+    display: block;
+}
+.card-box {
+    box-shadow: 0 0 7px -1px black;
+    .title {
+        background-color: #3bafda;
+        color: white;
+        padding: 0.5em;
+    }
+    .gauge {
+        padding: 1em;
+    }
+ 
+
+}

@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { TranslateModule } from '@ngx-translate/core';
-import { FormsModule } from '@angular/forms';
 import { RTL, LocalizationService, L10N_PREFIX, } from '@progress/kendo-angular-l10n';
+import { GaugesModule } from '@progress/kendo-angular-gauges';
+import { ChartsModule } from '@progress/kendo-angular-charts';
 
 export function directionFactory() {
   if(localStorage.getItem('direction') === "rtl") {
@@ -19,13 +20,20 @@ export function directionFactory() {
     CommonModule,
     LayoutModule,
     DropDownsModule,
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+    GaugesModule,
+    ChartsModule,
+
+
   ],
   exports: [
     CommonModule,
     LayoutModule,
     DropDownsModule,
-    TranslateModule
+    TranslateModule,
+    GaugesModule,
+    ChartsModule,
+
   ],
   providers: [
     { provide: RTL, useFactory: directionFactory },
